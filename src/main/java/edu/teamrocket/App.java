@@ -1,6 +1,8 @@
 package edu.teamrocket;
 
 import edu.teamrocket.items.RetailPrice;
+import edu.teamrocket.items.Product;
+import edu.teamrocket.items.Item;
 
 
 /**
