@@ -49,7 +49,6 @@ public class Item implements Product{
                 """;
     }
 
-
     @Override
     public boolean equals(Object obj) {
         if (obj instanceof Item item) {
