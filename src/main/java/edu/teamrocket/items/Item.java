@@ -40,13 +40,13 @@ public class Item implements Product{
 
     @Override
     public String toString() {
-        return """
-                %s....%f$
-                %s....%f$
-                %s....%f$
-                %s....%f$
-                %s....%f$
-                """;
+        return RetailPrice.contains(this.extra()) ?
+            """
+            %s....%.2f + %s
+            """.formatted(name(), price(), extra()) :
+            """
+            %s....%.2f
+            """.formatted(name(), price());
     }
 
     @Override
