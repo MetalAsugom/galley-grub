@@ -2,7 +2,6 @@ package edu.teamrocket.items;
 
 import java.util.Map;
 import java.util.HashMap;
-import java.util.stream.Stream;
 
 public class RetailPrice {
     private static Map<String, Double> prices = new HashMap<String, Double>();
