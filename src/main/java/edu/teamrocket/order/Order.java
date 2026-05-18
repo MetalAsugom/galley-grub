@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import edu.teamrocket.items.Item;
+import edu.teamrocket.items.ItemFactory;
 
 public class Order implements Comanda{
 
@@ -15,12 +16,14 @@ public class Order implements Comanda{
 
     @Override
     public void addItem(String name, double price) {
-        items.add(new Item(name, total));
+        Item item = ItemFactory.getItem(name, price);
+        items.add(item);
     }
 
     @Override
     public void addItem(String name, double price, String extra) {
-        items.add(new Item(name, total, extra));
+        Item item = ItemFactory.getItem(name, price, extra);
+        items.add(item);
     }
 
     @Override
